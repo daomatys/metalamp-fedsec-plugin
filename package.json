@@ -1,0 +1,28 @@
+{
+  "name": "metalamp-fedsec-plugin",
+  "version": "1.0.0",
+  "description": "jQuery plugin",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-plugin-fsd": "^1.0.1",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daomatys/metalamp-fedsec-plugin.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "daomatys",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/daomatys/metalamp-fedsec-plugin/issues"
+  },
+  "homepage": "https://github.com/daomatys/metalamp-fedsec-plugin#readme"
+}
