@@ -1,15 +1,24 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    //"strict": true,
+    /* strict rules list ( strict: true ) */
+    "alwaysStrict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
-    "alwaysStrict": true,
-    "strictBindCallApply": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
+    "strictBindCallApply": true,
     "strictPropertyInitialization": true,
-    //end of basic strict rules list
+    /* forbidden properties list */
+    "suppressExcessPropertyErrors": false,
+    "suppressImplicitAnyIndexErrors": false,
+    /* decorative properties list */
+    "pretty": true,
+    "removeComments": true,
+    /*  */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    
   },
   "rootDirs": [
     "./src",
