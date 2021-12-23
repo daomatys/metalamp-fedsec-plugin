@@ -2,7 +2,11 @@ module.exports = function(config) {
   config.set({
     frameworks: [
       "viewport",
-      "jasmine"
+      "jasmine",
+      "karma-chrome-launcher"
+    ],
+    files: [
+      "./src/**/*.spec.ts"
     ]
   });
 }
