@@ -1,17 +1,18 @@
 module.exports = function(config) {
   config.set({
-    frameworks: [
-      'karma-typescript',
-      'viewport',
-      'jasmine'
-    ],
     browsers: [
-      'Chrome'
+      //'Chrome',
+      'ChromeHeadless'
     ],
     files: [
       {
         pattern: './src/**/*.spec.ts'
       }
+    ],
+    frameworks: [
+      'karma-typescript',
+      'viewport',
+      'jasmine'
     ],
     preprocessors: {
       './src/**/*.spec.ts': [
@@ -19,14 +20,15 @@ module.exports = function(config) {
         'coverage'
       ]
     },
-    karmaTypescriptConfig: {
-      tsconfig: "./tsconfig.json",
-    },
     reporters: [
       'progress',
       'coverage',
       'karma-typescript'
     ],
-    autoWatch: true
+    karmaTypescriptConfig: {
+      tsconfig: './tsconfig.json'
+    },
+    autoWatch: true,
+    singleRun: true,
   });
 }
