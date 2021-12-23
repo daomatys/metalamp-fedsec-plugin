@@ -1,15 +1,15 @@
 import { testFunc } from './model';
 
 describe('1-module-3-task', () => {
-  it('должна делать первый символ заглавным', () => {
+  it('A', () => {
     expect( testFunc(2) ).toBe(4);
   });
 
-  it('должна работать для строки из одной буквы', () => {
+  it('B', () => {
     expect( testFunc(4) ).toBe(8);
   });
 
-  it('должна работать для пустой строки', () => {
+  it('C', () => {
     expect( testFunc(8) ).toBe(16);
   });
 });
