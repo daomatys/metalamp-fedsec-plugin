@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "@types/jasmine": "^3.10.2",
     "eslint": "^8.5.0",
     "eslint-plugin-fsd": "^1.0.1",
     "jasmine": "^3.10.0",
