@@ -4,8 +4,9 @@
     /* base settings list */
     "rootDirs": [
       "./src",
-    ],  
-    /* strictness rules */
+    ],
+    "pretty": true,
+    /* "strict": true, */
     "alwaysStrict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -13,11 +14,14 @@
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
+    /* advanced strict rules */
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
     /* manually forbidden rules */
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    /* decorative rules */
-    "pretty": true,
+    /* output codestyle rules */
     "removeComments": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -26,5 +30,4 @@
     "node_modules",
     "**/*.spec.ts"
   ]
-
 }
