@@ -1,7 +1,19 @@
 {
   "compileOnSave": true,
+  "buildOnSave": false,
   "compilerOptions": {
     /* base settings list */
+    "moduleResolution": "node",
+    //"module": "CommonJS",
+    //"target": "ES5",
+    "lib": [
+      "ES2016",
+      "DOM",
+      "ES5"
+    ],
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "esModuleInterop": true,
     "pretty": true,
     /* "strict": true, */
     "alwaysStrict": true,

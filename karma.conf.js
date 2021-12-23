@@ -14,14 +14,17 @@ module.exports = function(config) {
       }
     ],
     preprocessors: {
-      './src/**/*.spec.ts': 'karma-typescript'
+      './src/**/*.spec.ts': [
+        'karma-typescript',
+        'coverage'
+      ]
     },
     karmaTypescriptConfig: {
       tsconfig: "./tsconfig.json",
     },
     reporters: [
-      //'progress',
-      //'coverage',
+      'progress',
+      'coverage',
       'karma-typescript'
     ],
     autoWatch: true
