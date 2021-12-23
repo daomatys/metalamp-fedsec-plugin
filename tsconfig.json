@@ -3,12 +3,12 @@
   "buildOnSave": false,
   "compilerOptions": {
     /* base settings list */
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "module": "CommonJS",
     "target": "ES5",
     "outDir": "./dist/",
     "sourceMap": true,
-    //"esModuleInterop": true,
+    "esModuleInterop": true,
     "pretty": true,
     /* "strict": true, */
     "alwaysStrict": true,

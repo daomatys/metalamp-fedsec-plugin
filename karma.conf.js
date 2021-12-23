@@ -1,13 +1,19 @@
 module.exports = function(config) {
   config.set({
     browsers: [
-      //'Chrome',
-      'ChromeHeadless'
+      'Chrome',
     ],
     files: [
       {
         pattern: './src/**/*.spec.ts'
       }
+    ],
+    plugins: [
+      'karma-jasmine',
+      'karma-typescript',
+      'karma-coverage',
+      'karma-viewport',
+      'karma-chrome-launcher'
     ],
     frameworks: [
       'karma-typescript',
