@@ -1,7 +1,11 @@
 {
   "compileOnSave": true,
   "compilerOptions": {
-    /* strict rules list ( strict: true ) */
+    /* base settings list */
+    "rootDirs": [
+      "./src",
+    ],  
+    /* strictness rules */
     "alwaysStrict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -9,20 +13,15 @@
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
-    /* forbidden properties list */
+    /* manually forbidden rules */
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    /* decorative properties list */
+    /* decorative rules */
     "pretty": true,
     "removeComments": true,
-    /*  */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    
   },
-  "rootDirs": [
-    "./src",
-  ],
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
