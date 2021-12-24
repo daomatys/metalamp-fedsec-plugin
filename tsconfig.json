@@ -39,12 +39,5 @@
   "exclude": [
     "node_modules",
     "dist"
-  ],
-  "typeRoots": [
-    "node_modules/@types"
-  ],
-  "types": [
-    "@types/jasmine",
-    "@types/node"
   ]
 }

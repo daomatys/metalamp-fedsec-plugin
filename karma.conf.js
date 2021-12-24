@@ -7,13 +7,6 @@ module.exports = function(config) {
     files: [{
       pattern: 'src/**/*.test.ts'
     }],
-    plugins: [
-      require('karma-jasmine'),
-      require('karma-chrome-launcher'),
-      require('karma-jasmine-html-reporter'),
-      require('karma-coverage'),
-      require('karma-typescript'),
-    ],
     frameworks: [
       'karma-typescript',
       'jasmine'
@@ -36,10 +29,13 @@ module.exports = function(config) {
         transforms: [
           require('karma-typescript-es6-transform')()
         ]
-    }
+      }
     },
     colors: true,
     autoWatch: false,
     singleRun: true,
+    port: 9876,
+    logLevel: config.LOG_INFO,
+    concurrency: Infinity
   });
 }
