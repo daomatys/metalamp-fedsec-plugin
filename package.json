@@ -1,7 +1,7 @@
 {
   "name": "metalamp-fedsec-plugin",
   "version": "1.0.0",
-  "description": "jQuery plugin",
+  "description": "plugin",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -9,7 +9,6 @@
     "@types/node": "^17.0.4",
     "eslint": "^8.5.0",
     "eslint-plugin-fsd": "^1.0.1",
-    "jasmine": "^3.10.0",
     "jasmine-core": "^3.10.1",
     "karma": "^6.3.9",
     "karma-chrome-launcher": "^3.1.0",
@@ -17,9 +16,9 @@
     "karma-coverage": "^2.1.0",
     "karma-jasmine": "^4.0.1",
     "karma-jasmine-html-reporter": "^1.7.0",
-    "karma-typescript": "^5.5.2",
+    "karma-typescript": "latest",
     "karma-typescript-es6-transform": "^5.5.2",
-    "typescript": "^4.5.4"
+    "typescript": "latest"
   },
   "scripts": {
     "test": "karma start karma.conf.js",
