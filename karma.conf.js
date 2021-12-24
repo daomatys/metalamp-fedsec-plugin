@@ -5,7 +5,7 @@ module.exports = function(config) {
       'Chrome',
     ],
     files: [{
-      pattern: './src/**/*.spec.ts'
+      pattern: 'src/**/*.test.ts'
     }],
     plugins: [
       require('karma-jasmine'),
@@ -19,7 +19,7 @@ module.exports = function(config) {
       'jasmine'
     ],
     preprocessors: {
-      './src/**/*.spec.ts': [
+      'src/**/*.test.ts': [
         'karma-typescript',
         'coverage'
       ]
@@ -39,7 +39,7 @@ module.exports = function(config) {
     }
     },
     colors: true,
-    autoWatch: true,
+    autoWatch: false,
     singleRun: true,
   });
 }
