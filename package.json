@@ -15,14 +15,15 @@
     "karma-cli": "^2.0.0",
     "karma-coverage": "^2.1.0",
     "karma-jasmine": "^4.0.1",
+    "karma-jasmine-html-reporter": "^1.7.0",
     "karma-typescript": "^5.5.2",
-    "karma-viewport": "^1.0.8",
+    "karma-typescript-es6-transform": "^5.5.2",
     "typescript": "^4.5.4"
   },
   "scripts": {
     "test": "karma start karma.conf.js",
-    "lint": "eslint \"./*-module/**/*.js\"",
-    "lint:fix": "eslint --fix \"./*-module/**/*.js\""
+    "lint": "eslint \"./*-module/**/*.ts\"",
+    "lint:fix": "eslint --fix \"./*-module/**/*.ts\""
   },
   "repository": {
     "type": "git",

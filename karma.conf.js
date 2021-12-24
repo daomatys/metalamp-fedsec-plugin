@@ -1,23 +1,21 @@
 module.exports = function(config) {
   config.set({
+    basePath: '',
     browsers: [
       'Chrome',
     ],
-    files: [
-      {
-        pattern: './src/**/*.spec.ts'
-      }
-    ],
+    files: [{
+      pattern: './src/**/*.spec.ts'
+    }],
     plugins: [
-      'karma-jasmine',
-      'karma-typescript',
-      'karma-coverage',
-      'karma-viewport',
-      'karma-chrome-launcher'
+      require('karma-jasmine'),
+      require('karma-chrome-launcher'),
+      require('karma-jasmine-html-reporter'),
+      require('karma-coverage'),
+      require('karma-typescript'),
     ],
     frameworks: [
       'karma-typescript',
-      'viewport',
       'jasmine'
     ],
     preprocessors: {
@@ -27,13 +25,20 @@ module.exports = function(config) {
       ]
     },
     reporters: [
+      'kjhtml',
       'progress',
       'coverage',
       'karma-typescript'
     ],
     karmaTypescriptConfig: {
-      tsconfig: './tsconfig.json'
+      tsconfig: './tsconfig.json',
+      bundlerOptions: {
+        transforms: [
+          require('karma-typescript-es6-transform')()
+        ]
+    }
     },
+    colors: true,
     autoWatch: true,
     singleRun: true,
   });

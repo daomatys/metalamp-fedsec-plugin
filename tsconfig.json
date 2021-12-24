@@ -1,16 +1,16 @@
 {
   "compileOnSave": true,
-  "buildOnSave": false,
   "compilerOptions": {
-    /* base settings list */
+    "pretty": true,
+    "baseUrl": "./",
+    "outDir": "./dist/",
     "moduleResolution": "Node",
     "module": "CommonJS",
     "target": "ES5",
-    "outDir": "./dist/",
     "sourceMap": true,
     "esModuleInterop": true,
-    "pretty": true,
-    /* "strict": true, */
+
+    "strict": true,
     "alwaysStrict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -18,20 +18,24 @@
     "strictFunctionTypes": true,
     "strictBindCallApply": true,
     "strictPropertyInitialization": true,
-    /* advanced strict rules */
+
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
-    /* manually forbidden rules */
+
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    /* output codestyle rules */
+
     "removeComments": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
   },
   "include": [
-    "./src/**/*.ts"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
