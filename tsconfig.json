@@ -5,8 +5,8 @@
     "baseUrl": "./",
     "outDir": "./dist/",
     "moduleResolution": "Node",
-    "module": "CommonJS",
-    "target": "ES6",
+    "module": "ESNext",
+    "target": "ES3",
     "sourceMap": true,
     "esModuleInterop": true,
 
