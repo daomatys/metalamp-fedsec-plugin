@@ -18,8 +18,7 @@
   },
   "scripts": {
     "tsc": "tsc src/model/model.ts",
-    "test": "karma start karma.conf.js --single-run --no-auto-watch --no-browsers",
-    "test:w": "karma start karma.conf.js --browsers Chrome",
+    "test": "karma start karma.conf.js",
     "lint": "eslint \"./*-module/**/*.ts\"",
     "lint:fix": "eslint --fix \"./*-module/**/*.ts\""
   },
