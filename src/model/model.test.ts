@@ -1,15 +1,14 @@
-import { testFunc } from './model';
+/* eslint-disable */
+import { Model } from './model';
 
-describe('1-module-3-task', () => {
+describe('Math test', () => {
   it('A', () => {
-    expect( testFunc(2) ).toBe(4);
+    expect( Model.testFunc(2) ).toBe(4);
   });
-
   it('B', () => {
-    expect( testFunc(4) ).toBe(8);
+    expect( Model.testFunc(4) ).toBe(8);
   });
-
   it('C', () => {
-    expect( testFunc(8) ).toBe(16);
+    expect( Model.testFunc(8) ).toBe(16);
   });
 });

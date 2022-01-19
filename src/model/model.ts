@@ -1,3 +1,13 @@
-export const testFunc = function( x:number ):number {
-  return x * 2;
+class Model {
+
+  constructor() {
+
+  }
+
+  static testFunc( x:number ):number {
+    return x * 2;
+  }
+
 }
+
+export { Model };
