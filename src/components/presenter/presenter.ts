@@ -1,24 +1,32 @@
-type IWrapRef = HTMLElement | string;
-type IElement = HTMLElement | null;
+type IWrapRef = Element | string;
 
 class Presenter {
-  private wrapElement:IElement;
+  private readonly _wrapElement:Element;
 
   constructor(wrapRef:IWrapRef) {
-    this.wrapElement = this.defineElementByRef(wrapRef);
-    this.render(this.wrapElement);
+    this._wrapElement = this.defineElementByRef(wrapRef);
+    this.render();
   }
 
-  testFunc(x:number):number {
-    return x * 2;
+  defineElementByRef(wrapRef:IWrapRef):Element {
+    const caseWrapRefSelector = typeof wrapRef === 'string';
+
+    if ( caseWrapRefSelector ) {
+      const caseWrapRefExists = document.querySelector(wrapRef);
+
+      if ( caseWrapRefExists ) {
+        return caseWrapRefExists;
+      }
+      else {
+        throw new Error('Incorrect wrap element referrence!');
+      }
+    } else {
+      return wrapRef;
+    }
   }
 
-  defineElementByRef(wrapRef:IWrapRef):HTMLElement {
-    const caseWrapIsSelector = typeof wrapRef === 'string';
-    return caseWrapIsSelector ? document.querySelector(wrapRef) || document.body : wrapRef;
-  }
-
-  private render(wrapElement:HTMLElement) {
+  private render() {
+    const wrapElement = this._wrapElement;
     const insertableElement = document.createElement('div');
     wrapElement.insertAdjacentElement('afterbegin', insertableElement);
   }
