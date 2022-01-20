@@ -1,4 +1,5 @@
 /* eslint-disable */
+import JasmineExpect from 'jasmine-expect';
 import Presenter from './presenter';
 
 describe('PRESENTER TESTS:', () => {
@@ -19,7 +20,7 @@ describe('PRESENTER TESTS:', () => {
     });
 
     it('Non-existent wrap reference throws an error.', () => {
-      expect( new Presenter('.dlfsfkosok') ).toThrow(new Error('Incorrect wrap element referrence!'));
+      expect( () => new Presenter('.dlfsfkosok') ).toThrowAnyError();
     });
   });
 });

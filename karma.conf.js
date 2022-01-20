@@ -3,6 +3,7 @@ module.exports = function(config) {
     basePath: '',
     frameworks: [
       'jasmine',
+      'jasmine-matchers',
       'karma-typescript'
     ],
     files: [
