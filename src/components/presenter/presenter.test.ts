@@ -2,13 +2,13 @@
 import Presenter from './presenter';
 
 describe('Math test', () => {
-  it('A', () => {
+  it('A2', () => {
     expect( Presenter.testFunc(2) ).toBe(4);
   });
-  it('B', () => {
+  it('B4', () => {
     expect( Presenter.testFunc(4) ).toBe(8);
   });
-  it('C', () => {
+  it('C16', () => {
     expect( Presenter.testFunc(8) ).toBe(16);
   });
 });
