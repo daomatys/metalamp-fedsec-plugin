@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { Presenter } from './presenter';
+import Presenter from './presenter';
 
 describe('Math test', () => {
   it('A', () => {

@@ -7,10 +7,9 @@ class Presenter {
     this.wrap = wrap;
   }
 
-  static testFunc( x:number ):number {
+  static testFunc(x:number):number {
     return x * 2;
   }
-
 }
 
-export { Presenter };
+export default Presenter;

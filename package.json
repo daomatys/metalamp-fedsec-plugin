@@ -22,7 +22,7 @@
     "tsc": "tsc src/model/model.ts",
     "test": "karma start karma.conf.js",
     "lint": "eslint ./src/**/*.ts",
-    "lint:fix": "eslint --fix ./src"
+    "lint:fix": "eslint --fix ./src/**/*.ts"
   },
   "repository": {
     "type": "git",

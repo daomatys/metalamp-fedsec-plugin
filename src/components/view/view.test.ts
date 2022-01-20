@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { View } from './view';
+import View from './view';
 
 describe('Math test', () => {
   it('A', () => {

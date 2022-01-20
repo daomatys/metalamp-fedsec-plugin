@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { Model } from './model';
+import Model from './model';
 
 describe('Math test', () => {
   it('A', () => {
