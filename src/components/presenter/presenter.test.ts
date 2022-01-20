@@ -19,8 +19,12 @@ describe('PRESENTER TESTS', () => {
   describe('render', () => {
     const wrapRef = 'body';
     const presenter = new Presenter(wrapRef);
-    it('rendering'), () => {
+
+    it('not a null', () => {
+      expect( presenter.defineElementByRef(wrapRef) ).not.toBeNull();
+    });
+    it('node equivalence', () => {
       expect( presenter.defineElementByRef(wrapRef) ).toBe( document.body );
-    }
+    });
   });
 });
