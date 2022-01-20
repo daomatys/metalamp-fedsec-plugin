@@ -18,7 +18,7 @@ class Presenter {
         return caseWrapRefExists;
       }
       else {
-        throw new Error('Incorrect wrap element referrence!');
+        throw new Error('Incorrect wrap element reference!');
       }
     } else {
       return wrapRef;

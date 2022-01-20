@@ -1,9 +1,9 @@
 /* eslint-disable */
 import Presenter from './presenter';
 
-describe('PRESENTER TESTS', () => {
+describe('PRESENTER TESTS:', () => {
 
-  describe('render', () => {
+  describe('RENDERING PART:', () => {
     const wrapRef = 'body';
     const presenter = new Presenter(wrapRef);
     it('not a null', () => {
@@ -18,10 +18,8 @@ describe('PRESENTER TESTS', () => {
       expect( presenterB.defineElementByRef(document.body) ).toBe( document.body );
     });
 
-    const wrapRefC = '.dlfsfkosok';
-    const presenterC = new Presenter(wrapRefC);
-    it('Non-existent wrap reference throws an error', () => {
-      expect( presenterC.defineElementByRef(wrapRefC) ).toThrow(new Error('Incorrect wrap element referrence!'));
+    it('Non-existent wrap reference throws an error.', () => {
+      expect( new Presenter('.dlfsfkosok') ).toThrow(new Error('Incorrect wrap element referrence!'));
     });
   });
 });
