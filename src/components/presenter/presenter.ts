@@ -19,7 +19,7 @@ class Presenter {
   }
 
   private render(wrapElement:HTMLElement) {
-    const insertableElement = document.createElement('<span>HelloWorld!</span>');
+    const insertableElement = document.createElement('div');
     wrapElement.insertAdjacentElement('afterbegin', insertableElement);
   }
 }

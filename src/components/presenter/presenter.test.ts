@@ -17,10 +17,9 @@ describe('PRESENTER TESTS', () => {
   });
 
   describe('render', () => {
-    const presenter = new Presenter('body');
+    const wrapRef = 'body';
+    const presenter = new Presenter(wrapRef);
     it('rendering'), () => {
-      const wrapRef = 'body';
-
       expect( presenter.defineElementByRef(wrapRef) ).toBe( document.body );
     }
   });
