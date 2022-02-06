@@ -1,33 +1,38 @@
 //import jQuery from 'jquery';
 import DEFAULTS from './defaults';
 
-interface ISliderOptions{
+import Model from './components/model/model';
+import View from './components/view/view';
+import Presenter from './components/presenter/presenter';
+
+interface ISliderOptionsList {
   outputSelector?: string,
   vertical?: boolean,
   step?: number,
   scale?: boolean,
-}
+};
+
+interface ISliderOptions {
+  options: ISliderOptionsList,
+};
 
 interface ISliderFunction {
-  (this: JQuery, options: ISliderOptions): JQuery,
-}
-
-interface ISlider extends ISliderFunction {
-  options: ISliderOptions,
-}
+  (this: JQuery, options: ISliderOptionsList): JQuery,
+};
 
 declare global {
   interface JQuery {
-    slider: ISlider,
+    slider: ISliderOptions,
   }
-}
+};
 
 // Define the plugin function on the jQuery extension point.
 // Note: Function and global default options must be combined as long as the options are mandatory.
 (function($) {
-  const INIT = function(this: JQuery, options: ISliderOptions): JQuery {
+  const INIT = function initSlider(this: JQuery, options: ISliderOptionsList): JQuery {
     // Merge the global options with the options given as argument.
     options = $.extend({}, $.fn.slider.options, options);
+
     // Check if required options are missing.
     if (!options.outputSelector) {
       console.error(
@@ -41,5 +46,10 @@ declare global {
     return this;
   };
 
-  $.fn.slider = Object.assign<ISliderFunction, ISliderOptions>(INIT, DEFAULTS);
+  $.fn.slider = Object.assign<ISliderFunction, ISliderOptions>(
+    INIT, 
+    {
+      options: DEFAULTS
+    }
+  );
 })(jQuery);
