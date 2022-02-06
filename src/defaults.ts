@@ -1,5 +1,7 @@
 const DEFAULTS = {
-  testOption: true
+  vertical: false,
+  step: 10,
+  scale: true,
 };
 
 export default DEFAULTS;
