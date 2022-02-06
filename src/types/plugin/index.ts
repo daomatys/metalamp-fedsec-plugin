@@ -9,12 +9,12 @@ interface ISliderOptions {
   options: ISliderOptionsList,
 };
 
-interface ISliderFunction {
+interface ISliderInitializer {
   (this: JQuery, options: ISliderOptionsList): JQuery,
 };
 
 export {
-  ISliderFunction,
+  ISliderInitializer,
   ISliderOptionsList,
   ISliderOptions,
 };

@@ -1,5 +1,5 @@
 import {
-  ISliderFunction,
+  ISliderInitializer,
   ISliderOptionsList,
   ISliderOptions,
 } from './types/plugin';
@@ -38,5 +38,5 @@ declare global {
     return this;
   };
 
-  $.fn.slider = Object.assign<ISliderFunction, ISliderOptions>(INIT, OPTIONS);
+  $.fn.slider = Object.assign<ISliderInitializer, ISliderOptions>(INIT, OPTIONS);
 })(jQuery);
