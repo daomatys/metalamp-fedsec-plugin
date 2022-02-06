@@ -1,4 +1,3 @@
-//import jQuery from 'jquery';
 import {
   ISliderFunction,
   ISliderOptionsList,
@@ -32,9 +31,9 @@ declare global {
       );
       return this;
     }
-    const model = new Model();
-    const view = new View();
-    const presenter = new Presenter();
+    new Model();
+    new View();
+    new Presenter();
     
     return this;
   };
