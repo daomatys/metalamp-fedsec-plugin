@@ -2,11 +2,11 @@ import {
   ISliderInitializer,
   ISliderOptionsList,
   ISliderOptions,
-} from './types/plugin';
+} from './assets/types/plugin';
 
 import Presenter from './components/presenter/presenter';
 
-import DEFAULTS from './defaults';
+import DEFAULTS from './assets/constants/defaults';
 
 declare global {
   interface JQuery {

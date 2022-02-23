@@ -1,4 +1,4 @@
-import { ISliderOptionsList } from '../../types/plugin';
+import { ISliderOptionsList } from '../../assets/types/plugin';
 import Model from '../../components/model/model';
 import View from '../../components/view/view';
 
