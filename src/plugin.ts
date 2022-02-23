@@ -4,8 +4,6 @@ import {
   ISliderOptions,
 } from './types/plugin';
 
-import Model from './components/model/model';
-import View from './components/view/view';
 import Presenter from './components/presenter/presenter';
 
 import DEFAULTS from './defaults';
@@ -31,9 +29,7 @@ declare global {
       );
       return this;
     }
-    new Model();
-    new View();
-    new Presenter();
+    new Presenter(options);  
     
     return this;
   };
